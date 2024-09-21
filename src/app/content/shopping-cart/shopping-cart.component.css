@@ -1,0 +1,80 @@
+.accordion-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.accordion-slide {
+  width: 300px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.accordion-slide.active {
+  width: 600px;
+}
+
+.accordion-slide .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.text-section {
+  max-width: 50%;
+}
+
+.collection-title {
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+.discover-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.discover-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+

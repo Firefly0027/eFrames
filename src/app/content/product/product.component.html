@@ -1,0 +1,22 @@
+<div class="product-card">
+    <div class="badge" *ngIf="product.badge">{{ product.badge }}</div>
+    <div class="product-tumb">
+      <img [src]="product.imageUrl" [alt]="product.name">
+    </div>
+    <div class="product-details">
+      <span class="product-catagory">{{ product.category }}</span>
+      <h4><a href="#">{{ product.name }}</a></h4>
+      <p>{{ product.description }}</p>
+      <div class="product-bottom-details">
+        <div class="product-price">
+          <small *ngIf="product.oldPrice">{{ product.oldPrice | currency }}</small>
+          {{ product.newPrice | currency }}
+        </div>
+        <div class="product-links">
+          <a href=""><i class="fa fa-heart"></i></a>
+          <a href=""><i class="fa fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
