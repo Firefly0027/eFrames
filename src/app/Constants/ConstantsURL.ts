@@ -1,4 +1,4 @@
 export const ConstantURL = {
-    HomeURL: 'home',
-    ShopURL: 'shop',
-  };
+  HomeURL: 'home',
+  ShopURL: 'shop',
+};

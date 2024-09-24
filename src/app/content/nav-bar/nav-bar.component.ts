@@ -4,18 +4,18 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
-  styleUrl: './nav-bar.component.css'
+  styleUrl: './nav-bar.component.css',
 })
 export class NavBarComponent {
-  isActive: boolean = false;
+  menuOpen = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   redirectToShop() {
-  this.router.navigate(['/shop']);
-}
+    this.router.navigate(['/shop']);
+  }
 
-  toggleActive() {
-    this.isActive = !this.isActive;
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
   }
 }
