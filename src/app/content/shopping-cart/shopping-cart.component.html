@@ -1,33 +1,39 @@
 <app-nav-bar></app-nav-bar>
-<div class="accordion-container">
-    <div 
-      *ngFor="let slide of slides" 
-      class="accordion-slide" 
-      [ngClass]="{'active': slide === activeSlide}"
-      [style.backgroundImage]="'url(' + slide.image + ')'"
-      (click)="setActiveSlide(slide)">
-      <div class="content">
-        <h2>{{ slide.title }}</h2>
-        <p>{{ slide.description }}</p>
-      </div>
+<!-- <div class="accordion-container">
+  <div
+    *ngFor="let slide of slides"
+    class="accordion-slide"
+    [ngClass]="{ active: slide === activeSlide }"
+    [style.backgroundImage]="'url(' + slide.image + ')'"
+    (click)="setActiveSlide(slide)"
+  >
+    <div class="content">
+      <h2>{{ slide.title }}</h2>
+      <p>{{ slide.description }}</p>
     </div>
-</div>
+  </div>
+</div> -->
 
 <div class="home-container">
-    <div class="text-section">
-        <h1 class="collection-title">WINTER<br>COLLECTION</h1>
-        <p class="description">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-            It has survived not only five centuries, but also the leap into electronic typesetting, 
-            remaining essentially unchanged.
-        </p>
-        <a href="#" class="discover-button">DISCOVER NOW</a>
-    </div>
+  <div class="text-section">
+    <h1 class="collection-title">artists<br />COLLECTION</h1>
+    <p class="description">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged.
+    </p>
+    <a href="#" class="discover-button">DISCOVER NOW</a>
+  </div>
 </div>
 
+<app-product-filter></app-product-filter>
 <div class="product-list">
-  <app-product *ngFor="let product of products" [product]="product"></app-product>
+  <!-- <app-product></app-product> -->
+  <app-product
+    *ngFor="let product of products"
+    [product]="product"
+  ></app-product>
 </div>
-

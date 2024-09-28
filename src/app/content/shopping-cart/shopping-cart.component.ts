@@ -13,11 +13,10 @@ export class ShoppingCartComponent {
       name: 'Baldassare Castiglione, by Raffaello Sanzio',
       category: 'Classic Art',
       imageUrl:
-        '/assets/Classical Art/Baldassare Castiglione, by Raffaello Sanzio.jpg',
+        'https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
-      oldPrice: 96.0,
-      newPrice: 230.99,
+      price: 96.0,
       badge: 'Hot',
     },
     // Add more products up to 8 as desired
@@ -28,8 +27,7 @@ export class ShoppingCartComponent {
       imageUrl: '/assets/Classical Art/Equestrian.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
-      oldPrice: 50.0,
-      newPrice: 29.99,
+      price: 50.0,
       badge: 'Sale',
     },
     {
@@ -39,8 +37,7 @@ export class ShoppingCartComponent {
       imageUrl: '/assets/Classical Art/The Duke of Wellington.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
-      oldPrice: 50.0,
-      newPrice: 29.99,
+      price: 50.0,
       badge: 'Hot',
     },
     {
@@ -51,8 +48,7 @@ export class ShoppingCartComponent {
         '/assets/Classical Art/Leonardo da Vinci_s The Virgin and Child with Saint Anne (circa 1503).jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
-      oldPrice: 50.0,
-      newPrice: 29.99,
+      price: 50.0,
       badge: 'Sale',
     },
     {
@@ -63,8 +59,7 @@ export class ShoppingCartComponent {
         '/assets/Classical Art/Sandro Botticelli_s The Birth of Venus (1485) aesthetic painting.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
-      oldPrice: 50.0,
-      newPrice: 29.99,
+      price: 50.0,
       badge: 'Sale',
     },
     {
@@ -75,8 +70,7 @@ export class ShoppingCartComponent {
         '/assets/Classical Art/Cupid and Psyche, painting by Jacques-Louis David (1817).jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
-      oldPrice: 50.0,
-      newPrice: 29.99,
+      price: 50.0,
       badge: 'Sale',
     },
     {
@@ -87,8 +81,7 @@ export class ShoppingCartComponent {
         '/assets/Classical Art/Ginevra de_ Benci by Leonardo da Vinci.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
-      oldPrice: 50.0,
-      newPrice: 29.99,
+      price: 50.0,
       badge: 'Sale',
     },
     {
@@ -99,8 +92,7 @@ export class ShoppingCartComponent {
         '/assets/Classical Art/Leonardo da Vinci_s Baptism of Christ.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
-      oldPrice: 50.0,
-      newPrice: 29.99,
+      price: 50.0,
       badge: 'Sale',
     },
     {
@@ -111,8 +103,7 @@ export class ShoppingCartComponent {
         '/assets/Classical Art/Raphael_s Bindo Altoviti (ca. 1515) famous painting.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
-      oldPrice: 50.0,
-      newPrice: 29.99,
+      price: 50.0,
       badge: 'Sale',
     },
     {
@@ -123,8 +114,7 @@ export class ShoppingCartComponent {
         '/assets/Classical Art/Study of a Nude Man, Follower of Pierre Narcisse Guérin.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
-      oldPrice: 50.0,
-      newPrice: 29.99,
+      price: 50.0,
       badge: 'Sale',
     },
     // Add the remaining products...
