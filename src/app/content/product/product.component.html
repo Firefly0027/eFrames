@@ -19,7 +19,7 @@
       class="card__img"
       [style.backgroundImage]="'url(' + product.imageUrl + ')'"
     ></div>
-    <a href="#" class="card_link">
+    <a [routerLink]="['/product', product.id]" class="card_link">
       <div
         class="card__img--hover"
         [style.backgroundImage]="'url(' + product.imageUrl + ')'"

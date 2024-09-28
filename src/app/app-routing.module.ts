@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './content/header/header.component';
 import { ConstantURL } from './Constants/ConstantsURL';
 import { ShoppingCartComponent } from './content/shopping-cart/shopping-cart.component';
+import { ProductDetialsComponent } from './content/product-detials/product-detials.component';
 
 const routes: Routes = [
   { path: '', component: HeaderComponent },
-  { path: ConstantURL.ShopURL , component: ShoppingCartComponent },
+  { path: ConstantURL.ShopURL, component: ShoppingCartComponent },
+  { path: ConstantURL.ProductURL + '/:id', component: ProductDetialsComponent },
   // { path: 'frames/:id', component: FrameDetailsComponent },
   // { path: 'cart', component: CartComponent },
   // { path: 'checkout', component: CheckoutComponent },
@@ -15,7 +17,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
-
+export class AppRoutingModule {}

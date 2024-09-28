@@ -20,6 +20,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
+import { ProductDetialsComponent } from './content/product-detials/product-detials.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MatListModule } from '@angular/material/list';
     NavBarComponent,
     ProductComponent,
     ProductFilterComponent,
+    ProductDetialsComponent,
   ],
   imports: [
     BrowserModule,
