@@ -15,4 +15,5 @@ body {
   padding: 30px;
   background: #FFEFBA;
   background: -webkit-linear-gradient(to right bottom, #FFFFFF, #FFEFBA);
+  background: linear-gradient(to left, #FFFFFF, #FFEFBA);
 }
