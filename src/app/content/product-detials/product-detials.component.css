@@ -1,0 +1,8 @@
+.card-detials {
+    position: absolute;
+    background-color: red;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
