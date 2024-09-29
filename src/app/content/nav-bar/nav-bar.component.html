@@ -7,4 +7,8 @@
       ><span>a</span><span>m</span><span>e</span><span>s</span>
     </span>
   </div>
+
+  <div class="btn btn-animated" (click)="toggleMenu()">
+    <span class="plus-icon" [ngClass]="{ rotate: menuOpen }">+</span>
+  </div>
 </nav>
