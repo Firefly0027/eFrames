@@ -67,20 +67,60 @@
   color: #666;
 }
 
-.discover-button {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  border: .1rem solid #000;
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
   text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  transition: all .2s;
+  position: relative;
+  font-size: 1.6rem;
+  border-radius: .5rem;
 }
 
-.discover-button:hover {
+.btn-white {
   background-color: #000;
-  color: #fff;
+  color: #fffcf0;
+}
+
+.btn:hover {
+  transform: translateY(-.3rem);
+  box-shadow: 0 1rem 2rem rgb(0, 0, 0, .2);
+  background-color: #fffcf0;
+  color: #000;
+}
+
+.btn:active {
+  transform: translateY(-.1rem);
+  box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+  border-radius: .5rem;
+}
+
+.btn-white::after {
+  background-color: #000;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveToTop .5s ease-out .75s;
+  animation-fill-mode: backwards;
 }
 
 /* Media Queries */
@@ -117,7 +157,7 @@
     font-size: 1em;
   }
 
-  .discover-button {
+  .btn {
     padding: .5rem 1.6rem;
   }
 }
@@ -132,7 +172,7 @@
     font-size: 0.9em;
   }
 
-  .discover-button {
+  .btn {
     padding: .6rem 1.2rem;
     font-size: 0.9em;
   }
@@ -172,6 +212,18 @@
 
   80% {
     transform: translateX(-10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveToTop {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
   }
 
   100% {
