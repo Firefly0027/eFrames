@@ -1,10 +1,9 @@
-.navbar {
+.shared-styles {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   background-color: #fffcf0;
-  margin-top: 2rem;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
@@ -16,6 +15,15 @@
   width: auto;
   overflow: hidden;
 }
+
+.navbar {
+  margin-top: 2rem;
+}
+
+.menu {
+  margin-top: 15rem;
+}
+
 
 .title-text {
   text-transform: uppercase;
@@ -261,4 +269,51 @@
     position: fixed;
     right: 2rem;
   }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navigation-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+}
+
+.line {
+  flex-grow: 1;
+  height: 0.1rem;
+  margin-bottom: 1.5rem;
+  background-color: #000;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.navigation-list li {
+  flex-basis: calc(33.33% - 1rem);
+}
+
+.navigation-list li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation-list li a:hover {
+  text-decoration: underline;
 }
