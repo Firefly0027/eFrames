@@ -21,6 +21,7 @@
   text-transform: uppercase;
   display: inline-block;
   white-space: nowrap;
+  margin-right: 2.5rem;
 }
 
 .title-text span {
@@ -117,7 +118,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 580px) {
   .title-text span {
     opacity: 1;
     transform: translateX(0) scale(1);
@@ -198,7 +199,9 @@
   text-decoration: none;
   display: inline-block;
   transition: all .2s;
-  position: relative;
+  position: absolute;
+  right: 1rem;
+  margin-right: 1rem;
   cursor: pointer;
   border: none;
   outline: none;
@@ -251,4 +254,11 @@
 
 .rotate {
   transform: rotate(45deg);
+}
+
+@media (max-width: 600px) {
+  .btn {
+    position: fixed;
+    right: 2rem;
+  }
 }
