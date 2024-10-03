@@ -11,10 +11,6 @@ export class NavBarComponent {
 
   constructor(private router: Router) {}
 
-  redirectToShop() {
-    this.router.navigate(['/shop']);
-  }
-
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
