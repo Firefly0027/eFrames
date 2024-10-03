@@ -22,6 +22,8 @@
 
 .menu {
   margin-top: 17.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 
@@ -259,9 +261,14 @@
   animation-fill-mode: backwards;
 }
 
-
 .rotate {
   transform: rotate(45deg);
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+  transform: translateY(10);
 }
 
 @media (max-width: 600px) {
