@@ -21,7 +21,7 @@
 }
 
 .menu {
-  margin-top: 15rem;
+  margin-top: 17.5rem;
 }
 
 
@@ -275,6 +275,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 48rem;
 }
 
 .navigation-header {
@@ -297,23 +298,27 @@ h3 {
   background-color: #000;
 }
 
+
 .navigation-list {
   display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  gap: 1rem;
-  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: .5rem;
 }
 
-.navigation-list li {
-  flex-basis: calc(33.33% - 1rem);
+.flex {
+  display: flex;
+  text-transform: capitalize;
+  justify-content: space-between;
+  gap: 15rem;
 }
 
-.navigation-list li a {
+.navigation-list a {
   text-decoration: none;
+  padding: 10px;
   color: #000;
 }
 
-.navigation-list li a:hover {
+.navigation-list a:hover {
   text-decoration: underline;
 }
