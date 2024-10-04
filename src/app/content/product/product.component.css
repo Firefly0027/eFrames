@@ -32,18 +32,18 @@
     position: relative;
 }
 
-.card0 {
+.card-listing {
     background: url('/assets/Leonardo-da-Vinci.jpg') center center no-repeat;
     background-size: 30rem;
 }
 
-.card0:hover {
+.card-listing:hover {
     background: url('/assets/Leonardo-da-Vinci.jpg') top center no-repeat;
     background-size: 60rem;
 }
 
-.card0:hover h2,
-.card0:hover .fa {
+.card-listing:hover h2,
+.card-listing:hover .fa {
     opacity: 1;
 }
 
