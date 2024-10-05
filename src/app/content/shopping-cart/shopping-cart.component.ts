@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { Product } from '../../interfaces/product';
+import { ConstantURL } from '../../Constants/ConstantsURL';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -128,6 +129,7 @@ export class ShoppingCartComponent {
     },
   ];
   activeSlide = this.slides[0];
+  artistsURL = ConstantURL.ArtistsURL;
 
   setActiveSlide(slide: any) {
     this.activeSlide = slide;

@@ -22,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { ProductDetialsComponent } from './content/product-detials/product-detials.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { ProductArtistsComponent } from './content/product-artists/product-artists.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     ProductComponent,
     ProductFilterComponent,
     ProductDetialsComponent,
+    ProductArtistsComponent,
   ],
   imports: [
     BrowserModule,
