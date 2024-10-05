@@ -178,18 +178,19 @@
   }
 }
 
-/* @media (max-width: 320px) {
-  app-product {
-    margin-right: 8rem;
-  }
-} */
-
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
   gap: 2rem;
   padding: 2rem;
   justify-items: center;
+}
+
+@media (max-width: 400px) {
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
 }
 
 @keyframes moveToLeft {

@@ -35,11 +35,13 @@
 .card-listing {
     background: url('/assets/Leonardo-da-Vinci.jpg') center center no-repeat;
     background-size: 30rem;
+    max-width: 100%;
 }
 
 .card-listing:hover {
     background: url('/assets/Leonardo-da-Vinci.jpg') top center no-repeat;
     background-size: 60rem;
+    max-width: 100%;
 }
 
 .card-listing:hover h2,
