@@ -166,6 +166,7 @@
   .collection-title {
     font-size: 3rem;
     letter-spacing: .5rem;
+    word-wrap: break-word;
   }
 
   .description {
@@ -175,14 +176,15 @@
   .btn {
     padding: .6rem 1.2rem;
     font-size: 0.9em;
+    word-wrap: break-word;
   }
 }
 
 .product-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-  gap: 2rem;
-  padding: 2rem;
+  gap: .5rem;
+  padding: 1rem;
   justify-items: center;
 }
 

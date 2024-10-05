@@ -33,45 +33,68 @@
 }
 
 .card-listing {
-    background: url('/assets/Leonardo-da-Vinci.jpg') center center no-repeat;
+    z-index: 1;
+    background-position: center center;
     background-size: 30rem;
-    max-width: 100%;
+    transition: background-size 0.8s, background-position 0.8s;
+    overflow: hidden;
 }
 
 .card-listing:hover {
-    background: url('/assets/Leonardo-da-Vinci.jpg') top center no-repeat;
+    background-position: top center;
     background-size: 60rem;
-    max-width: 100%;
+}
+
+.card-listing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: -1;
+    transition: filter 1s;
+    pointer-events: none;
+}
+
+.card-listing:hover::before {
+    filter: blur(20px);
 }
 
 .card-listing:hover h2,
-.card-listing:hover .fa {
+.card-listing:hover .info {
     opacity: 1;
 }
 
 h2 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: white;
+    color: #000;
     margin: 2rem;
     opacity: 0;
     transition: opacity 1s;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 3rem;
 }
 
-.fa {
+.info {
+    display: block;
     opacity: 0;
     transition: opacity 1s;
+    position: relative;
+    font-size: 2rem;
 }
 
 .icons {
     position: absolute;
-    fill: #fff;
-    color: #fff;
+    fill: #000;
+    color: #000;
     height: 13rem;
     top: 22rem;
-    width: 5rem;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
     margin-left: 2rem;
+    gap: 2rem;
 }

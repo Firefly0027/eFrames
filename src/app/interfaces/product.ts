@@ -5,5 +5,4 @@ export interface Product {
   imageUrl: string;
   description: string;
   price: number;
-  badge?: string;
 }

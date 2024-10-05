@@ -10,114 +10,94 @@ export class ShoppingCartComponent {
   products: Product[] = [
     {
       id: 1,
-      name: 'Baldassare Castiglione, by Raffaello Sanzio',
+      name: 'Leonardo da Vinci',
       category: 'Classic Art',
-      imageUrl:
-        'https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
+      imageUrl: '/assets/Leonardo-da-Vinci.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
       price: 96.0,
-      badge: 'Hot',
     },
-    // Add more products up to 8 as desired
     {
       id: 2,
-      name: 'Equestrian Portrait of the Duke of Lerma (1603) baroque oil painting by Peter Paul Rubens.',
+      name: 'Vincent van Gogh',
       category: 'Classic Art',
-      imageUrl: '/assets/Classical Art/Equestrian.jpg',
+      imageUrl: '/assets/starry-nights.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
       price: 50.0,
-      badge: 'Sale',
     },
     {
       id: 3,
       name: 'The Duke of Wellington',
       category: 'Classic Art',
-      imageUrl: '/assets/Classical Art/The Duke of Wellington.jpg',
+      imageUrl: '/assets/PabloPicasso.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
       price: 50.0,
-      badge: 'Hot',
     },
     {
       id: 4,
       name: 'Leonardo da Vinci_s The Virgin and Child with Saint Anne (circa 1503)',
       category: 'Classic Art',
-      imageUrl:
-        '/assets/Classical Art/Leonardo da Vinci_s The Virgin and Child with Saint Anne (circa 1503).jpg',
+      imageUrl: '/assets/Leonardo-da-Vinci.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
       price: 50.0,
-      badge: 'Sale',
     },
     {
       id: 5,
       name: 'Sandro Botticelli_s The Birth of Venus (1485) aesthetic painting',
       category: 'Classic Art',
-      imageUrl:
-        '/assets/Classical Art/Sandro Botticelli_s The Birth of Venus (1485) aesthetic painting.jpg',
+      imageUrl: '/assets/PabloPicasso.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
       price: 50.0,
-      badge: 'Sale',
     },
     {
       id: 6,
       name: 'Cupid and Psyche, painting by Jacques-Louis David (1817)',
       category: 'Classic Art',
-      imageUrl:
-        '/assets/Classical Art/Cupid and Psyche, painting by Jacques-Louis David (1817).jpg',
+      imageUrl: '/assets/Leonardo-da-Vinci.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
       price: 50.0,
-      badge: 'Sale',
     },
     {
       id: 7,
       name: 'Ginevra de_ Benci (ca.1474–1478)by Leonardo da Vinci',
       category: 'Classic Art',
-      imageUrl:
-        '/assets/Classical Art/Ginevra de_ Benci by Leonardo da Vinci.jpg',
+      imageUrl: '/assets/Michelangelo.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
       price: 50.0,
-      badge: 'Sale',
     },
     {
       id: 8,
-      name: 'Leonardo da Vinci_s Baptism of Christ',
+      name: 'Pablo Picasso',
       category: 'Classic Art',
-      imageUrl:
-        '/assets/Classical Art/Leonardo da Vinci_s Baptism of Christ.jpg',
+      imageUrl: '/assets/Leonardo-da-Vinci.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
       price: 50.0,
-      badge: 'Sale',
     },
     {
       id: 9,
       name: 'Raphael_s Bindo Altoviti (ca. 1515) famous painting',
       category: 'Classic Art',
-      imageUrl:
-        '/assets/Classical Art/Raphael_s Bindo Altoviti (ca. 1515) famous painting.jpg',
+      imageUrl: '/assets/starry-nights.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
       price: 50.0,
-      badge: 'Sale',
     },
     {
       id: 10,
-      name: 'Study of a Nude Man, Follower of Pierre Narcisse Guérin',
+      name: 'Michelangelo',
       category: 'Classic Art',
-      imageUrl:
-        '/assets/Classical Art/Study of a Nude Man, Follower of Pierre Narcisse Guérin.jpg',
+      imageUrl: '/assets/Michelangelo.jpg',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!',
       price: 50.0,
-      badge: 'Sale',
     },
-    // Add the remaining products...
   ];
 
   slides = [

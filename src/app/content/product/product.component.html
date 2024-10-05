@@ -1,11 +1,14 @@
 <div class="container">
-  <div class="card card-listing">
+  <div
+    class="card card-listing"
+    [ngStyle]="{ 'background-image': 'url(' + product.imageUrl + ')' }"
+  >
     <div class="border">
       <h2>{{ product.name }}</h2>
       <div class="icons">
-        <span class="fa"> {{ product.category }}</span>
-        <span class="fa">{{ product.description }}</span>
-        <span class="fa">{{ product.price }}</span>
+        <span class="info category"> {{ product.category }}</span>
+        <span class="info description">{{ product.description }}</span>
+        <span class="info price"> Price : {{ product.price }}</span>
       </div>
     </div>
   </div>
