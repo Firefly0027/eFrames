@@ -1,0 +1,18 @@
+<div class="mainPage">
+  <div class="untitled">
+    <div class="untitled__slides">
+      <div
+        class="untitled__slide"
+        *ngFor="let slide of slides; let i = index"
+        [ngStyle]="{ '--slide-bg': 'url(' + slide.imageUrl + ')' }"
+      >
+        <div class="untitled__slideBg"></div>
+        <div class="untitled__slideContent">
+          <span>{{ slide.firstName }}</span>
+          <span>{{ slide.lastName }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="untitled__shutters"></div>
+  </div>
+</div>
