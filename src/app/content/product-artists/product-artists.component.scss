@@ -6,12 +6,10 @@ $e2: cubic-bezier(0.600, 0.040, 0.980, 0.335);
 $er: linear;
 
 
-$backgroundColor: #636363;  
-$backgroundColorWebkit: -webkit-linear-gradient(to right, #a2ab58, #636363);  
-$backgroundColorLiner: linear-gradient(to right, #a2ab58, #636363); 
-
+$backgroundColor: #F09819;  
+$backgroundColorWebkit: -webkit-linear-gradient(to right, #EDDE5D, #F09819); 
+$backgroundColorLiner: linear-gradient(to right, #EDDE5D, #F09819);
 $slides: 4;
-
 
 .mainPage {
     position: relative;
@@ -29,19 +27,19 @@ $slides: 4;
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	@keyframes rotateHue {
-		0%{ filter: hue-rotate(0deg); }
-		20%{ filter: hue-rotate(0deg); }
-		25%{ filter: hue-rotate(90deg); }
-		45%{ filter: hue-rotate(90deg); }
-		50%{ filter: hue-rotate(180deg); }
-		70%{ filter: hue-rotate(180deg); }
-		75%{ filter: hue-rotate(270deg); }
-		95%{ filter: hue-rotate(270deg); }
-		100%{ filter: hue-rotate(360deg); }
-	}
-	animation: rotateHue infinite $t*$slides*2 linear;
-	animation-delay: $t/4;
+	// @keyframes rotateHue {
+	// 	0%{ filter: hue-rotate(0deg); }
+	// 	20%{ filter: hue-rotate(0deg); }
+	// 	25%{ filter: hue-rotate(90deg); }
+	// 	45%{ filter: hue-rotate(90deg); }
+	// 	50%{ filter: hue-rotate(180deg); }
+	// 	70%{ filter: hue-rotate(180deg); }
+	// 	75%{ filter: hue-rotate(270deg); }
+	// 	95%{ filter: hue-rotate(270deg); }
+	// 	100%{ filter: hue-rotate(360deg); }
+	// }
+	// animation: rotateHue infinite $t*$slides*2 linear;
+	// animation-delay: $t/4;
 	
 	&__shutters{
 		position: absolute;

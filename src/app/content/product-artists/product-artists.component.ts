@@ -19,23 +19,22 @@ export class ProductArtistsComponent {
     {
       firstName: 'London',
       lastName: 'Scout',
-      imageUrl:
-        'https://www.dailyartmagazine.com/wp-content/uploads/2022/08/CreationOfAdam1078-768x368.jpg',
+      imageUrl: 'assets/forest-7580700_1280.jpg',
     },
     {
       firstName: 'Vladimir',
       lastName: 'Kudinov',
-      imageUrl: 'https://unsplash.it/g/1500/1000?image=1078',
+      imageUrl: 'assets/versailles-9057981_1280.jpg',
     },
     {
       firstName: 'Macio',
       lastName: 'Amorim',
-      imageUrl: 'https://unsplash.it/g/1500/1000?image=1077',
+      imageUrl: 'assets/forest-7580700_1280.jpg',
     },
     {
       firstName: 'Mario',
       lastName: 'Calvo',
-      imageUrl: 'https://unsplash.it/g/1500/1200?image=345',
+      imageUrl: 'assets/versailles-9057981_1280.jpg',
     },
   ];
 }
