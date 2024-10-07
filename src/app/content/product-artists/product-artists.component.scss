@@ -9,18 +9,27 @@ $er: linear;
 $backgroundColor: #F09819;  
 $backgroundColorWebkit: -webkit-linear-gradient(to right, #EDDE5D, #F09819); 
 $backgroundColorLiner: linear-gradient(to right, #EDDE5D, #F09819);
+$color-white : #fff;
 $slides: 4;
 
-.mainPage {
-    position: relative;
-    top: 7rem;
-    height: 60vh;
-    width: 100%;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.section {
+	&-One {
+		position: relative;
+		top: 7rem;
+		height: 60vh;
+		width: 100%;
+		border-radius: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	&-Tow {
+		position: relative;
+		top: 7rem;
+		height: 100vh;
+	}
 }
 
 .untitled{	
@@ -157,7 +166,7 @@ $slides: 4;
 		top: 50%;
 		left: 50%;
 		transform: translate3d(-50%,-50%,0);
-		color: white;
+		color: $color-white;
 		line-height: 0.8;
 		letter-spacing: -0.025em;
 		z-index: 2;
@@ -170,4 +179,3 @@ $slides: 4;
 		}
 	}
 }
-

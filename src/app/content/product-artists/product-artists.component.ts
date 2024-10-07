@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import { gsap } from 'gsap';
 import { Power4 } from 'gsap/all';
+import { Filter } from '../../interfaces/filter';
 
 @Component({
   selector: 'app-product-artists',
@@ -35,6 +36,35 @@ export class ProductArtistsComponent {
       firstName: 'Mario',
       lastName: 'Calvo',
       imageUrl: 'assets/versailles-9057981_1280.jpg',
+    },
+  ];
+
+  filters: Filter[] = [
+    {
+      name: 'Artists',
+      key: 'artists',
+      options: [
+        'Leonardo da Vinci',
+        'Vincent van Gogh',
+        'Pablo Picasso',
+        'Claude Monet',
+        'Frida Kahlo',
+      ],
+    },
+    {
+      name: 'Categories',
+      key: 'category',
+      options: [
+        'Renaissance',
+        'Post-Impressionism',
+        'Impressionism',
+        'Surrealism',
+      ],
+    },
+    {
+      name: 'Size',
+      key: 'size',
+      options: ['50px', '100px', '200px'],
     },
   ];
 }

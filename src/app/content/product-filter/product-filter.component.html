@@ -1,118 +1,26 @@
-<div class="filter-body">
-  <span (click)="openFilterDialog()" class="filter-button"
-    ><i class="ph ph-faders"></i> filter</span
-  >
-  <span class="sorting-button"
-    ><i class="ph ph-sort-descending"></i> sort by</span
-  >
-</div>
+<span (click)="toggleFilter()" class="filter-button">
+  <i class="ph ph-faders"></i> filter</span
+>
+<div class="side-filter" [ngClass]="{ open: isFilterOpen }">
+  <div class="filter-header">
+    <span class="close-btn" (click)="toggleFilter()">&times;</span>
+    <h3>Filter</h3>
+  </div>
 
-<ng-template #filterDialog>
-  <div class="custom-dialog" [@slideInFromLeft]>
-    <h1 mat-dialog-title>Filter Options</h1>
-    <div mat-dialog-content>
-      <!-- Category Filter -->
-      <mat-accordion>
-        <mat-expansion-panel expanded="true">
-          <mat-expansion-panel-header>
-            <mat-panel-title>Category</mat-panel-title>
-          </mat-expansion-panel-header>
-          <mat-selection-list>
-            <mat-list-option *ngFor="let category of categories">{{
-              category
-            }}</mat-list-option>
-          </mat-selection-list>
-        </mat-expansion-panel>
-
-        <!-- Collection Filter -->
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>Collection</mat-panel-title>
-          </mat-expansion-panel-header>
-          <mat-checkbox *ngFor="let collection of collections"
-            >{{ collection.name }} ({{ collection.count }})</mat-checkbox
-          >
-        </mat-expansion-panel>
-
-        <!-- Shape Filter -->
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>Shape</mat-panel-title>
-          </mat-expansion-panel-header>
-          <mat-selection-list>
-            <mat-list-option *ngFor="let shape of shapes">{{
-              shape
-            }}</mat-list-option>
-          </mat-selection-list>
-        </mat-expansion-panel>
-
-        <!-- Colours Filter -->
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>Colours</mat-panel-title>
-          </mat-expansion-panel-header>
-          <mat-checkbox *ngFor="let color of colors"
-            >{{ color.name }} ({{ color.count }})</mat-checkbox
-          >
-        </mat-expansion-panel>
-
-        <!-- Finish Filter -->
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>Finish</mat-panel-title>
-          </mat-expansion-panel-header>
-          <mat-checkbox *ngFor="let finish of finishes">{{
-            finish
-          }}</mat-checkbox>
-        </mat-expansion-panel>
-
-        <!-- Size Filter -->
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title>Size</mat-panel-title>
-          </mat-expansion-panel-header>
-          <div>
-            <p>Width</p>
-            <mat-slider
-              min="0"
-              max="100"
-              step="1"
-              thumbLabel
-              tickInterval="10"
-            ></mat-slider>
-            <mat-form-field appearance="fill">
-              <mat-label>Min Width</mat-label>
-              <input matInput placeholder="0" type="number" />
-            </mat-form-field>
-            <mat-form-field appearance="fill">
-              <mat-label>Max Width</mat-label>
-              <input matInput placeholder="12" type="number" />
-            </mat-form-field>
-          </div>
-          <div>
-            <p>Height</p>
-            <mat-slider
-              min="0"
-              max="100"
-              step="1"
-              thumbLabel
-              tickInterval="10"
-            ></mat-slider>
-            <mat-form-field appearance="fill">
-              <mat-label>Min Height</mat-label>
-              <input matInput placeholder="0" type="number" />
-            </mat-form-field>
-            <mat-form-field appearance="fill">
-              <mat-label>Max Height</mat-label>
-              <input matInput placeholder="3" type="number" />
-            </mat-form-field>
-          </div>
-        </mat-expansion-panel>
-      </mat-accordion>
-    </div>
-    <div mat-dialog-actions>
-      <button mat-button mat-dialog-close>Cancel</button>
-      <button mat-button mat-dialog-close>Apply</button>
+  <div class="filter-body">
+    <div *ngFor="let filter of filters" class="filter-section">
+      <h4>{{ filter.name }}</h4>
+      <ul>
+        <li
+          *ngFor="let option of filter.options"
+          (click)="onFilterClick(filter.key, option)"
+          [ngClass]="{ active: isActive(filter.key, option) }"
+        >
+          {{ option }}
+        </li>
+      </ul>
     </div>
   </div>
-</ng-template>
+
+  <div class="filter-products" (click)="applyFilters()">VIEW PRODUCTS</div>
+</div>
