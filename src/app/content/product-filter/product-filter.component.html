@@ -1,26 +1,28 @@
-<span (click)="toggleFilter()" class="filter-button">
-  <i class="ph ph-faders"></i> filter</span
->
-<div class="side-filter" [ngClass]="{ open: isFilterOpen }">
-  <div class="filter-header">
-    <span class="close-btn" (click)="toggleFilter()">&times;</span>
-    <h3>Filter</h3>
-  </div>
-
-  <div class="filter-body">
-    <div *ngFor="let filter of filters" class="filter-section">
-      <h4>{{ filter.name }}</h4>
-      <ul>
-        <li
-          *ngFor="let option of filter.options"
-          (click)="onFilterClick(filter.key, option)"
-          [ngClass]="{ active: isActive(filter.key, option) }"
-        >
-          {{ option }}
-        </li>
-      </ul>
+<div class="filter">
+  <span (click)="toggleFilter()" class="filter-button">
+    <i class="ph ph-faders"></i> filter</span
+  >
+  <div class="side-filter" [ngClass]="{ open: isFilterOpen }">
+    <div class="filter-header">
+      <span class="close-btn" (click)="toggleFilter()">&times;</span>
+      <h3>Filter</h3>
     </div>
-  </div>
 
-  <div class="filter-products" (click)="applyFilters()">VIEW PRODUCTS</div>
+    <div class="filter-body">
+      <div *ngFor="let filter of filters" class="filter-section">
+        <h4>{{ filter.name }}</h4>
+        <ul>
+          <li
+            *ngFor="let option of filter.options"
+            (click)="onFilterClick(filter.key, option)"
+            [ngClass]="{ active: isActive(filter.key, option) }"
+          >
+            {{ option }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="filter-products" (click)="applyFilters()">VIEW PRODUCTS</div>
+  </div>
 </div>

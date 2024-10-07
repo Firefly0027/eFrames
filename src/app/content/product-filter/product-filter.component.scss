@@ -55,6 +55,8 @@ li {
 }
 
 .filter {
+    position: relative;
+
 	&-body {
 		margin-top: 4rem;
 	}
@@ -88,7 +90,7 @@ li {
 .side-filter {
 	width: 25rem;
 	padding: 2rem;
-	position: relative;
+	position: sticky;
 	top: 1rem;
 	left: 0;
 	z-index: 2;
@@ -134,23 +136,24 @@ li {
 
 			& .close-btn {
 				text-transform: uppercase;
-				text-decoration: none;
 				display: inline-block;
-				transition: all .2s;
-				position: absolute;
-                font-weight: 400;
-                font-size: 5rem;
+                transition: background-color 0.3s ease, color 0.3s ease;
+                position: absolute;
+                font-weight: 100;
+                font-size: 3rem;
 				right: 1rem;
                 margin: 2rem;
 				cursor: pointer;
-				border: none;
 				outline: none;
 				background: none;
+                border: .1rem solid $color-black;
+                border-radius: 50%;
+                padding: 0 .3rem .3rem;
 
-                &:active {
-                    transform: translateY(-.1rem);
-                    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .2);
-                }
+                &:hover {
+                    background-color: $color-black;
+                    color: $color-white; 
+                  }
 			}
 		}
 

@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { Product } from '../../interfaces/product';
 import { ConstantURL } from '../../Constants/ConstantsURL';
+import { Filter } from '../../interfaces/filter';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -101,37 +102,29 @@ export class ShoppingCartComponent {
     },
   ];
 
-  slides = [
+  filters: Filter[] = [
     {
-      image: '/assets/Abstract-photos/harles-Demuth.jpg',
-      title: 'Slide 1 Title',
-      description: 'Description for Slide 1.',
+      name: 'Frames',
+      key: 'frames',
+      options: [
+        'Wooden Frames',
+        'Metal Frames',
+        'Floating Frames',
+        'Collage Frames',
+        'Digital Frames',
+      ],
     },
     {
-      image: '/assets/Abstract-photos/white.jpg',
-      title: 'Slide 2 Title',
-      description: 'Description for Slide 2.',
+      name: 'Categories',
+      key: 'category',
+      options: ['Traditional', 'Modern', 'Contemporary', 'Minimalist'],
     },
     {
-      image: '/assets/Abstract-photos/Abstrac-Landscape.jpg',
-      title: 'Slide 3 Title',
-      description: 'Description for Slide 3.',
-    },
-    {
-      image: '/assets/Abstract-photos/Winds.jpg',
-      title: 'Slide 4 Title',
-      description: 'Description for Slide 4.',
-    },
-    {
-      image: '/assets/Abstract-photos/Pieta.jpg',
-      title: 'Slide 4 Title',
-      description: 'Description for Slide 4.',
+      name: 'Size',
+      key: 'size',
+      options: ['8" x 10"', '11" x 14"', '16" x 20"'],
     },
   ];
-  activeSlide = this.slides[0];
-  artistsURL = ConstantURL.ArtistsURL;
 
-  setActiveSlide(slide: any) {
-    this.activeSlide = slide;
-  }
+  artistsURL = ConstantURL.ArtistsURL;
 }
